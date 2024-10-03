@@ -1,0 +1,75 @@
+/* _content/JMusicBlog/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+.h1[b-lzwb7h4two],.h2[b-lzwb7h4two], .h3[b-lzwb7h4two] {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-primary[b-lzwb7h4two] {
+    background: linear-gradient(135deg, #96C47B, #548687);
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.nav-pills .nav-link.active[b-lzwb7h4two], .nav-pills .show > .nav-link[b-lzwb7h4two] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-lzwb7h4two] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-lzwb7h4two] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-lzwb7h4two] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-lzwb7h4two] {
+    background: linear-gradient(135deg, #96C47B, #548687);
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+.footer[b-lzwb7h4two] {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    background-color: rgba(0, 0, 0, 0.5); /* 70% dark */
+    padding: 3px 0;
+    margin-top: 10px; /* Adjust this value to create space between pictures and footer */
+}

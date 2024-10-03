@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link href="~/css/indexdesign.css" rel="stylesheet" />
+
+<div>
+
+    <div class="geVideoWrapper">
+        <video id="hoverVideo1" class="geVideo">
+            <source src="~/audios/grandescape16_9%20-%20made%20with%20clipchamp.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <div class="transparent-border-title">
+        <h1 class="display-4">My J-Music Blog</h1>
+        <p>日本の世界で私の好きな音楽の味を探求して学びましょう</p>
+        <p>Embark on a journey to discover my cherished melodies in the realm of Japanese Music.</p>
+    </div>
+
+    <div class="btn-enter-placement">
+        <a asp-controller="JMusics" asp-action="Index" class="btn btn-design-enter">Enter</a>
+    </div>
+
+    <div class="btn-search-placement">
+        <a asp-controller="JMusics" asp-action="ShowSearchForm" class="btn btn-design-search">Search</a>
+    </div>
+
+    <div class="sakamichi46-container">
+        <a href="https://www.generasia.com/wiki/Sakamichi_Series">
+        <img src="~/images/sakamichi46logo.webp" class="sakamichi46-logo" title="Click to Explore about my Top 1 Fan" />
+        <div class="sakamichi46-text"> Sakamichi 46</div>
+    </a>
+    </div>
+
+    <!-- Proceed to the location of MyTops-->
+    <div>
+        <a asp-controller="Home" asp-action="MyTops">
+            <img src="~/images/vlcsnap-error921.png" class="mytopspic-placement" title="My Top 20 Anime Openings" />
+        </a>
+    </div>
+
+    <div class="gevideodisplay" onmouseover="playVideo1()" onmouseout="pauseVideo1()">
+         <img src="~/images/vlcsnap-error145.png" class="grand-escape-mv-placement" />
+    </div>
+
+    <div class="teaser-songs">
+        TEASER SONGS
+    </div>
+
+    <!-- SONG INDEX 1-->
+    <div class="index-image-position1" onmouseover="playAudio1()" onmouseout="pauseAudio1()">
+        <img src="~/images/stargazeshelter.jpg" class="song-index1" />
+        <div class="song-title">Stargaze Shelter - Emulation</div>
+    </div>
+
+    <audio id="hoverAudio1" loop>
+        <source src="@Url.Content("~/audios/emulation-stargazeshelter.mp3")" type="audio/mpeg">
+    </audio>
+
+    <!-- SONG INDEX 2-->
+    <div class="index-image-position2" onmouseover="playAudio2()" onmouseout="pauseAudio2()">
+        <img src="~/images/twilight-radwimps-pic.png" class="song-index1" />
+        <div class="song-title">RADWIMPS - Twilight</div>
+    </div>
+
+    <audio id="hoverAudio2" loop>
+        <source src="@Url.Content("~/audios/twilight-radwimps.mp3")" type="audio/mpeg">
+    </audio>
+
+    <!-- SONG INDEX 3-->
+    <div class="index-image-position3" onmouseover="playAudio3()" onmouseout="pauseAudio3()">
+        <img src="~/images/lemon-pic.png" class="song-index1" />
+        <div class="song-title">Kenshi Yonezu - Lemon</div>
+    </div>
+
+    <audio id="hoverAudio3" loop>
+	    <source src="@Url.Content("~/audios/lemon-shorts.mp3")" type="audio/mpeg" />
+    </audio>
+
+</div>

@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "MY TOPS";
+}
+
+    <div class="title-tops">
+        <p class="transparent-border-mytops">MY TOP 20 ANIME OPENINGS ~2018</p>
+    </div>
+
+    <div>
+        <video src="~/audios/my_top_20_anime_openings_(_~_2020_)_sd%20360p.mp4" width="500px" controls></video>
+    </div>
+
+
+<style>
+    .title-tops {
+        justify-content: left;
+        margin-bottom: 20px;
+    }
+
+    .transparent-border-mytops {
+        display: inline-block;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 20px;
+        width: auto;
+        font-weight: bold;
+        background-color: rgba(255, 255, 255, 0.4);
+        border: 2px solid transparent;
+        transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    }
+
+        .transparent-border-mytops:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+ 
+</style>
