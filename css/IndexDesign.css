@@ -1,0 +1,210 @@
+﻿/*TEASER SONGS INDEX*/
+.teaser-songs {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 5px;
+    width: 170px;
+    font-weight: bold;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #FF85A2, #ACD8E4);
+    position: absolute;
+    bottom: 685px;
+    left: 1295px;
+    transition: height 0.3s ease, transform 0.3s ease;
+}
+
+    .teaser-songs:hover {
+        transform: scale(1.05);
+    }
+
+.index-image-position1, .index-image-position2, .index-image-position3 {
+    border-radius: 10px;
+    background: linear-gradient(135deg, #FF85A2, #ACD8E4);
+    width: 160px;
+    height: 160px; /* Size of the box */
+    position: absolute; 
+    transition: height 0.3s ease, transform 0.3s ease;
+}
+
+/*  positioning for index images */
+.index-image-position1 {
+    bottom: 500px;
+    left: 1300px;
+}
+
+.index-image-position2 {
+    bottom: 300px;
+    left: 1300px;
+}
+
+.index-image-position3 {
+    bottom: 100px;
+    left: 1300px;
+}
+
+.song-index1, .song-index2, .song-index3 {
+    border: 2px solid #000;
+    border-radius: 10px;
+    width: 135px;
+    height: 135px; /* Size of the picture */
+    top: 10px;
+    left: 12.5px; /* Placement of picture in the box */
+    position: absolute;
+}
+
+.song-title {
+    display: none; /* Hide the text initially */
+    position: absolute;
+    bottom: -2px; /* Position the text at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 10px;
+    background: linear-gradient(135deg, #FF85A2, #ACD8E3); /* Semi-transparent background */
+}
+
+.index-image-position1:hover, .index-image-position2:hover, .index-image-position3:hover {
+    transform: scale(1.05);
+    height: 170px; /* Extend the height of the box on hover */
+}
+
+.index-image-position1:hover .song-title, .index-image-position2:hover .song-title, .index-image-position3:hover .song-title {
+    display: block; /* Show the text on hover */
+}
+
+.sakamichi46-text {
+    position: absolute;
+    text-align:center;
+    width: 180px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    display: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+    top: 120px;
+    left: 60px;/*Placement*/
+}
+
+.sakamichi46-logo {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: 140px;
+    left: 85px;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.sakamichi46-container:hover .sakamichi46-logo {
+    transform:scale(1.05);
+}
+
+.sakamichi46-container:hover .sakamichi46-text {
+    display: inline-block; /* Show text on hover */
+    opacity: 1;
+    animation: riseUp 0.3s ease forwards;
+}
+
+@keyframes riseUp {
+    from {
+        transform: translateY(20px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.mytopspic-placement {
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 10px;
+    height: 150px;
+    width: 260px;
+    bottom: 340px;
+    left: 30px; /*Placement*/
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.mytopspic-placement:hover {
+    transform: scale(1.05);
+}
+
+.geVideoWrapper {
+    position: absolute;
+}
+/* Add a common class for the elements to hide */
+.hide-on-hover {
+    opacity: 1; /* Ensure they are visible by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+.grand-escape-mv-placement:hover ~ .hide-on-hover,
+.grand-escape-mv-placement:hover ~ .geVideoWrapper {
+    opacity: 0; /* Hide all elements when grand-escape-mv-placement is hovered */
+}
+
+/* Existing styles remain unchanged... */
+.grand-escape-mv-placement {
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 10px;
+    height: 150px;
+    width: 260px;
+    bottom: 160px;
+    left: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+    .grand-escape-mv-placement:hover {
+        transform: scale(1.05);
+    }
+
+.geVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 850px;
+    z-index: -3;
+    opacity: 0; /* Initially hide the video */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    object-fit: fill;
+}
+
+.grand-escape-mv-placement {
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 10px;
+    height: 150px;
+    width: 260px;
+    bottom: 160px;
+    left: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+    .grand-escape-mv-placement:hover {
+        transform: scale(1.05);
+    }
+
+.geVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 850px;
+    z-index: -3;
+    opacity: 0; /* Initially hide the video */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    object-fit:fill;
+}
+
+.gevideodisplay:hover + .geVideo {
+    display: inline-block; /* Show the video when the image is hovered */
+}
+
